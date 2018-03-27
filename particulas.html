@@ -1,0 +1,65 @@
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>particles.js example</title>
+    <script src="/application/html/js/VincentGarreau/particles.js/particles.min.js"></script>
+    <style>
+html,body{
+  margin:0;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+#particles-js{
+  height:100%;
+  background:#000;
+}
+    </style>
+</head>
+<body>
+<div id="particles-js"></div>
+<script src="js/jquery-3.3.1.js"></script>
+	<script src="materialize/js/materialize.js"></script>
+    <script>
+    particlesJS('particles-js', {
+    particles: {
+        color: '#ff0',
+        shape: 'circle',
+        opacity: 1,
+        size: 3,
+        size_random: true,
+        nb: 25,
+        line_linked: {
+            enable_auto: true,
+            distance: 200,
+            color: '#ff0',
+            width: 2,
+            condensed_mode: {
+                enable: true,
+                rotateX: 0,
+                rotateY: 0
+            }
+        },
+        anim: {
+            enable: true,
+            speed: 2
+        }
+    },
+    interactivity: {
+        enable: true,
+        mouse: {
+            distance: 200
+        },
+        mode: 'grab'
+    },
+    retina_detect: true
+});
+    </script>
+</body>
+</html>

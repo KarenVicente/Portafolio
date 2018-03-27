@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Dedicada a...</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.css">
+	<link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="materialize/css/materialize.css">
+	<script src="https://unpkg.com/masonry-layout@4.2.1/dist/masonry.pkgd.min.js"></script>
+</head>
+<body>
+	<nav>
+	    <div class="nav-wrapper blue-grey darken-4">
+	      <a href="#!" class="brand-logo">Logo</a>
+	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+	      <!-- Sale en pantallas grandes-->
+	      <!--<ul class="right hide-on-med-and-down">
+	        <li><a href="sass.html">Galería</a></li>
+	        <li><a href="badges.html">Imagenes</a></li>
+	        <li><a href="collapsible.html">Quien soy</a></li>
+	        <li><a href="mobile.html">Extras</a></li>
+	      </ul>-->
+	      <ul class="right hide-on-med-and-down">
+	        <li><a href="#"><i class="material-icons">search</i></a></li>
+	        <li><a href="#"><i class="material-icons">view_module</i></a></li>
+	        <li><a href="#"><i class="material-icons">refresh</i></a></li>
+	        <li><a href="#"><i class="material-icons">more_vert</i></a></li>
+	      </ul>
+	      <ul class="side-nav" id="mobile-demo">
+	        <li class="active"><a href="sass.html">Galería</a></li>
+	        <li><a href="badges.html">Imagenes</a></li>
+	        <li><a href="collapsible.html">Quien soy</a></li>
+	        <li><a href="mobile.html">Extras</a></li>
+	      </ul>
+	    </div>
+	  </nav>
+	  <nav>
+      <div class="nav-wrapper">
+	      <div class="col s12">
+	        <a href="#!" class="breadcrumb">Inicio</a>
+	        <a href="#!" class="breadcrumb">Galeria</a>
+	        <a href="#!" class="breadcrumb">Foto</a>
+	      </div>
+	    </div>
+	  </nav>
+	<h1>Galeria de fotos</h1>
+
+	<div class="contenedor">
+		<div class="elemento">
+			<img src="Imagenes/3.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi atque vel debitis magnam. Perferendis, asperiores. Consectetur voluptate earum perspiciatis.</p>
+		</div>
+		<div class="elemento">
+			<img src="Imagenes/1.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi atque vel debitis magnam. Perferendis, asperiores. Consectetur voluptate earum perspiciatis.</p>
+		</div>
+		<div class="elemento">
+			<img src="Imagenes/1.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi atque vel debitis magnam. Perferendis, asperiores. Consectetur voluptate earum perspiciatis.</p>
+		</div>
+		<div class="elemento">
+			<img src="Imagenes/4.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi atque vel debitis magnam. Perferendis, asperiores. Consectetur voluptate earum perspiciatis.</p>
+		</div>
+		<div class="elemento">
+			<img src="Imagenes/1.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi atque vel debitis magnam. Perferendis, asperiores. Consectetur voluptate earum perspiciatis.</p>
+		</div>
+		<div class="elemento">
+			<img src="Imagenes/5.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi atque vel debitis magnam. Perferendis, asperiores. Consectetur voluptate earum perspiciatis.</p>
+		</div>
+		<div class="elemento">
+			<img src="Imagenes/1.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi atque vel debitis magnam. Perferendis, asperiores. Consectetur voluptate earum perspiciatis.</p>
+		</div>
+		<div class="elemento">
+			<img src="Imagenes/1.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi atque vel debitis magnam. Perferendis, asperiores. Consectetur voluptate earum perspiciatis.</p>
+		</div>
+		<div class="elemento">
+			<img src="Imagenes/1.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi atque vel debitis magnam. Perferendis, asperiores. Consectetur voluptate earum perspiciatis.</p>
+		</div>
+		<div class="elemento">
+			<img src="Imagenes/5.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi atque vel debitis magnam. Perferendis, asperiores. Consectetur voluptate earum perspiciatis.</p>
+		</div>
+		<div class="elemento">
+			<img src="Imagenes/1.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi atque vel debitis magnam. Perferendis, asperiores. Consectetur voluptate earum perspiciatis.</p>
+		</div>
+		<div class="elemento">
+			<img src="Imagenes/4.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi atque vel debitis magnam. Perferendis, asperiores. Consectetur voluptate earum perspiciatis.</p>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.js"></script>
+	<!--<script src="bootstrap-3.3.7/js/bootstrap.js"></script>-->
+	<script src="materialize/js/materialize.js"></script>
+	<script>
+		var elem = document.querySelector('.contenedor');
+		var msnry = new Masonry( elem, {
+		  // options
+		  itemSelector: '.elemento',
+		});
+
+		// element argument can be a selector string
+		//   for an individual element
+		var msnry = new Masonry( '.contenedor', {
+		  // options
+		});
+	</script>
+</body>
+</html>
